@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator on ShinyApps</title>
+  <meta charset="utf-8">
+  <meta name="description" content="BMI Calculator on ShinyApps">
+  <meta name="author" content="Alekh Jain">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>BMI Calculator on ShinyApps</h1>
+    <h2>Coursera Submission for &quot;Developing Data Products&quot;</h2>
+    <p>Alekh Jain<br/>Data Warehousing Consultant</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>About the BMI calculator</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>This <strong>BMI calculator</strong> is a simple <em>ShinyApp</em>.<br></li>
+<li>It can be used to calculate BMI in <strong>two simple steps</strong>.<br></li>
+<li>The application is <strong>reactive</strong>, so it updates the BMI result as you type-in the inputs.<br></li>
+<li>This application uses <strong>Standard</strong> units.<br></li>
+<li>Later slides will cover <strong>unit conversions</strong> if you have inputs in metric units.<br></li>
+<li>Key features of the application:
+
+<ul>
+<li>Simple and elegant</li>
+<li>fast</li>
+<li>light-weight</li>
+<li>no advertisements</li>
+<li>hosted by Shinyapps.io<br></li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Calculate your BMI in two simple steps</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Step 1: Input your <b>Height</b> in Inches<br></li>
+<li>Step 2: Input your <b>Weight</b> in Pounds<br>
+<br>
+<u>Note:</u> </li>
+<li>Decimal values for weight / height are also accepted<br></li>
+<li>You can use arrow buttons to increment / decrement values<br></li>
+<li>Alternatively, you may type in the values manually<br></li>
+<li>When using the up button you may only go to next nearest whole number<br></li>
+<li>When using the down button you may only go to next nearest whole number<br></li>
+<li>If you know values in metric units, see subsequent slides for help<br></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>An example</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Lets see it in action:</p>
+
+<pre><code class="r">height &lt;- 72  # height in inches
+weight &lt;- 172  # weight in pounds
+
+BMI &lt;- computeBMI(72, 172)
+</code></pre>
+
+<p></p>
+
+<p>The BMI for a person <em>72 inches tall</em> and <em>172 pounds heavy</em>: <strong>23.3248</strong></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Conversion from Metric to Standard units</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Conversion from centimeters to Inches</h3>
+
+<p>Divide value in centimeters with 2.54 to get value in inches.  </p>
+
+<p></p>
+
+<p><u>Example:</u><br>
+Let, Height in centimeters = 180 cms<br>
+Then, Height in inches would be = 70.8661 inches</p>
+
+<h3>Conversion from Kilograms to Pounds</h3>
+
+<p>Multiply value in Kilograms with 2.20462 to get value in pounds.  </p>
+
+<p></p>
+
+<p><u>Example:</u><br>
+Let, Weight in Kilograms = 78 kgs<br>
+Then, Weight in pounds would be = 171.9604 pounds</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='About the BMI calculator'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Calculate your BMI in two simple steps'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='An example'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conversion from Metric to Standard units'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
