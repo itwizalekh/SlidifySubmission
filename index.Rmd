@@ -20,10 +20,10 @@ knit        : slidify::knit2slides
 - Later slides will cover **unit conversions** if you have inputs in metric units.  
 - Key features of the application:
   - Simple and elegant
-  - fast
-  - light-weight
-  - no advertisements
-  - hosted by Shinyapps.io  
+  - Fast
+  - Light-weight
+  - No advertisements
+  - Hosted by Shinyapps.io  
 
 --- .class #id 
 
